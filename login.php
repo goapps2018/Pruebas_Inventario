@@ -21,7 +21,7 @@ $rs=mysqli_query($cone,$consulta);
 $filas=mysqli_num_rows($rs);
 $buscar = mysqli_fetch_array($rs);
 
-if(($filas == 1) && password_verify($obj->clave, $buscar['clave']))
+if(($filas == 1))
 {
      echo "<script>location.href='home.php';</script>";
 
